@@ -10,7 +10,7 @@
 		45CCCE220F4FF4D7D92D3115 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 45CCC8B9C25C93AA2BAC1BF9 /* .gitignore */; };
 		463412FF2CDB0F0600EE94E8 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 463412FE2CDB0F0600EE94E8 /* Logging */; };
 		4673A5352D1AC492001BF929 /* libMTKepler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673A5342D1AC492001BF929 /* libMTKepler.a */; };
-		46EE3C17254B142000EC17BB /* KeplerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE3C16254B142000EC17BB /* KeplerApp.swift */; };
+		46EE3C17254B142000EC17BB /* PlatoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE3C16254B142000EC17BB /* PlatoApp.swift */; };
 		46EE3C1B254B142200EC17BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3C1A254B142200EC17BB /* Assets.xcassets */; };
 		46EE3C1E254B142200EC17BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3C1D254B142200EC17BB /* Preview Assets.xcassets */; };
 		46EE3C21254B142200EC17BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3C1F254B142200EC17BB /* Main.storyboard */; };
@@ -27,7 +27,7 @@
 		4673A5342D1AC492001BF929 /* libMTKepler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTKepler.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4673A56F2D1BE5A3001BF929 /* Venus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Venus.entitlements; sourceTree = "<group>"; };
 		46EE3C13254B142000EC17BB /* Venus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46EE3C16254B142000EC17BB /* KeplerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeplerApp.swift; sourceTree = "<group>"; };
+		46EE3C16254B142000EC17BB /* PlatoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatoApp.swift; sourceTree = "<group>"; };
 		46EE3C1A254B142200EC17BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46EE3C1D254B142200EC17BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46EE3C20254B142200EC17BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				4634130C2CDB15E700EE94E8 /* Models */,
 				463413042CDB13BB00EE94E8 /* Services */,
 				463413002CDB120F00EE94E8 /* Windows */,
-				46EE3C16254B142000EC17BB /* KeplerApp.swift */,
+				46EE3C16254B142000EC17BB /* PlatoApp.swift */,
 				46EE3C1A254B142200EC17BB /* Assets.xcassets */,
 				46EE3C1F254B142200EC17BB /* Main.storyboard */,
 				46EE3C22254B142200EC17BB /* Info.plist */,
@@ -230,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EE3C17254B142000EC17BB /* KeplerApp.swift in Sources */,
+				46EE3C17254B142000EC17BB /* PlatoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

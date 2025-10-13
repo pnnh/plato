@@ -1,5 +1,5 @@
-module MTKepler {
-	header "kepler/logger/logger.h"
+module MTPlato {
+	header "plato/logger/logger.h"
 	header "quark/services/logger/logger.h"
 	header "quark/services/random/random.h"
 	header "quark/core/graphics/color.h"

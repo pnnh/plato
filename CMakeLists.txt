@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.28...3.31)
 
-project(Kepler VERSION 0.1.0 LANGUAGES C CXX)
+project(Plato VERSION 0.1.0 LANGUAGES C CXX)
 
 enable_language(OBJC OBJCXX Swift)
 
@@ -30,15 +30,15 @@ endif ()
 set(Boost_USE_STATIC_LIBS ON)
 set(Boost_USE_MULTITHREADED ON)
 
-set(LIB_NAME "MTKepler")
+set(LIB_NAME "MTPlato")
 
-file(GLOB_RECURSE KEPLER_SOURCES
-        kepler/*.cpp
+file(GLOB_RECURSE PLATO_SOURCES
+        plato/*.cpp
         quark/core/*.cpp
         quark/infra/*.cpp
         quark/services/*.cpp)
 
-add_library(${LIB_NAME} ${KEPLER_SOURCES} module.modulemap)
+add_library(${LIB_NAME} ${PLATO_SOURCES} module.modulemap)
 
 # 查找并引用日志库
 find_package(spdlog CONFIG REQUIRED)

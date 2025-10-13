@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace kepler
+namespace plato
 {
     class Logger
     {

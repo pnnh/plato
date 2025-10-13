@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-void kepler::Logger::LogInfo(const std::string& message)
+void plato::Logger::LogInfo(const std::string& message)
 {
     std::cout << "[INFO] " << message << std::endl;
 }

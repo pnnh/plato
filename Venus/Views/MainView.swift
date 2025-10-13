@@ -10,26 +10,6 @@ struct PSMainView: View {
         Grid {
             GridRow {
                 VStack {
-                    Image(.files)
-                        .font(.system(size: 56))
-                        .foregroundColor(.accentColor)
-                    Text("资源管理器")
-                        .onTapGesture {
-                            print("Double tapped!")
-                            router.navigate(to: .files)
-                        }
-                }
-                VStack {
-                    Image(.notes)
-                        .font(.system(size: 56))
-                        .foregroundColor(.accentColor)
-                    Text("笔记管理")
-                        .onTapGesture {
-                            print("Double tapped!")
-                            router.navigate(to: .notes(owner: "详细信息"))
-                        }
-                }
-                VStack {
                     Image(.images)
                         .font(.system(size: 56))
                         .foregroundColor(.accentColor)

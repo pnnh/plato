@@ -1,12 +1,12 @@
 import Cocoa
 import SwiftUI
 import AppKit
-import MTKepler
+import MTPlato
 import Logging
 import SwiftData
 
 @main
-struct KeplerApp: App {
+struct PlatoApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
 //    var window: PSMainWindow!
@@ -29,7 +29,7 @@ struct KeplerApp: App {
 //        window.makeKeyAndOrderFront(nil)
 //        
 //        // 尝试调用C++侧的日志打印
-//        MTKepler.quark.Logger.LogInfo("Call From Swift")
+//        MTPlato.quark.Logger.LogInfo("Call From Swift")
 //        
 //        // 尝试调用SPM里的Swift-log来打印日志
 //        let logger = Logger(label: "xyz.huable.venus.main")
@@ -54,10 +54,6 @@ struct KeplerApp: App {
                 PSMainView()
                .navigationDestination(for: Router.Destination.self) { destination in
                    switch destination {
-                   case .files:
-                       PSFilesView().navigationBarBackButtonHidden(true)
-                   case .notes(_):
-                       PSNotesView(ownerName: "xxxNotes").navigationBarBackButtonHidden(true)
                    case .images:
                        PSImageView().navigationBarBackButtonHidden(true)
                    default:
