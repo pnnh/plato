@@ -51,13 +51,13 @@ struct PlatoApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.navPath) {
-                PSMainView()
+                PSMainPage()
                .navigationDestination(for: Router.Destination.self) { destination in
                    switch destination {
                    case .images:
-                       PSImageView().navigationBarBackButtonHidden(true)
+                       PSImagePage().navigationBarBackButtonHidden(true)
                    default:
-                       PSMainView().navigationBarBackButtonHidden(true)
+                       PSMainPage().navigationBarBackButtonHidden(true)
                    }
                }
            }.padding(0)

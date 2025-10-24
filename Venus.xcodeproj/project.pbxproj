@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		45CCCE220F4FF4D7D92D3115 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 45CCC8B9C25C93AA2BAC1BF9 /* .gitignore */; };
 		463412FF2CDB0F0600EE94E8 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 463412FE2CDB0F0600EE94E8 /* Logging */; };
-		4673A5352D1AC492001BF929 /* libMTKepler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673A5342D1AC492001BF929 /* libMTKepler.a */; };
+		4673A5352D1AC492001BF929 /* libMTPlato.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4673A5342D1AC492001BF929 /* libMTPlato.a */; };
 		46EE3C17254B142000EC17BB /* PlatoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE3C16254B142000EC17BB /* PlatoApp.swift */; };
 		46EE3C1B254B142200EC17BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3C1A254B142200EC17BB /* Assets.xcassets */; };
 		46EE3C1E254B142200EC17BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3C1D254B142200EC17BB /* Preview Assets.xcassets */; };
@@ -21,10 +21,10 @@
 		4633F6C12D02E0B90009FE83 /* libMTMacos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTMacos.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4633F7232D02FC310009FE83 /* libMTQuantum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTQuantum.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4673A5282D1AB720001BF929 /* libMTQuark.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libMTQuark.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		4673A52C2D1ABADB001BF929 /* libMTKepler.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libMTKepler.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		4673A5302D1ABD9F001BF929 /* libMTKepler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTKepler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4673A52C2D1ABADB001BF929 /* libMTPlato.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libMTPlato.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4673A5302D1ABD9F001BF929 /* libMTPlato.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTPlato.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4673A5322D1ABDA1001BF929 /* libMTQuark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTQuark.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4673A5342D1AC492001BF929 /* libMTKepler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTKepler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4673A5342D1AC492001BF929 /* libMTPlato.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMTPlato.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4673A56F2D1BE5A3001BF929 /* Venus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Venus.entitlements; sourceTree = "<group>"; };
 		46EE3C13254B142000EC17BB /* Venus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EE3C16254B142000EC17BB /* PlatoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatoApp.swift; sourceTree = "<group>"; };
@@ -35,24 +35,55 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		463413002CDB120F00EE94E8 /* Windows */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Windows; sourceTree = "<group>"; };
-		463413042CDB13BB00EE94E8 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
-		4634130C2CDB15E700EE94E8 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
-		4634130D2CDB15F500EE94E8 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
-		4673A5702D1BE6C4001BF929 /* Router */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Router; sourceTree = "<group>"; };
-		4673A5892D1BF94F001BF929 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
-		46CB5C122CEB718D00525A0C /* Assets */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Assets; sourceTree = "<group>"; };
+		463413002CDB120F00EE94E8 /* Windows */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		463413042CDB13BB00EE94E8 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4634130C2CDB15E700EE94E8 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4634130D2CDB15F500EE94E8 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4673A5702D1BE6C4001BF929 /* Router */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4673A5892D1BF94F001BF929 /* Components */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		46941AA02EAB85570064BC91 /* Pages */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		46CB5C122CEB718D00525A0C /* Assets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		46EE3C10254B142000EC17BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				4673A5352D1AC492001BF929 /* libMTKepler.a in Frameworks */,
+				4673A5352D1AC492001BF929 /* libMTPlato.a in Frameworks */,
 				463412FF2CDB0F0600EE94E8 /* Logging in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -60,10 +91,10 @@
 		37508AEFE740CC69BDAB8CAC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4673A5342D1AC492001BF929 /* libMTKepler.a */,
+				4673A5342D1AC492001BF929 /* libMTPlato.a */,
 				4673A5322D1ABDA1001BF929 /* libMTQuark.a */,
-				4673A5302D1ABD9F001BF929 /* libMTKepler.a */,
-				4673A52C2D1ABADB001BF929 /* libMTKepler.dylib */,
+				4673A5302D1ABD9F001BF929 /* libMTPlato.a */,
+				4673A52C2D1ABADB001BF929 /* libMTPlato.dylib */,
 				4633F6C12D02E0B90009FE83 /* libMTMacos.a */,
 				4673A5282D1AB720001BF929 /* libMTQuark.dylib */,
 				4633F7232D02FC310009FE83 /* libMTQuantum.a */,
@@ -92,6 +123,7 @@
 		46EE3C15254B142000EC17BB /* Venus */ = {
 			isa = PBXGroup;
 			children = (
+				46941AA02EAB85570064BC91 /* Pages */,
 				4673A5892D1BF94F001BF929 /* Components */,
 				4673A5702D1BE6C4001BF929 /* Router */,
 				4673A56F2D1BE5A3001BF929 /* Venus.entitlements */,
@@ -131,8 +163,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
 				463413002CDB120F00EE94E8 /* Windows */,
 				463413042CDB13BB00EE94E8 /* Services */,
@@ -140,6 +170,7 @@
 				4634130D2CDB15F500EE94E8 /* Views */,
 				4673A5702D1BE6C4001BF929 /* Router */,
 				4673A5892D1BF94F001BF929 /* Components */,
+				46941AA02EAB85570064BC91 /* Pages */,
 				46CB5C122CEB718D00525A0C /* Assets */,
 			);
 			name = Venus;
@@ -167,7 +198,6 @@
 				};
 			};
 			buildConfigurationList = 46EE3C0E254B142000EC17BB /* Build configuration list for PBXProject "Venus" */;
-			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -178,6 +208,7 @@
 			packageReferences = (
 				46E363B12CDB0CA4003FBE3C /* XCRemoteSwiftPackageReference "swift-log" */,
 			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 46EE3C14254B142000EC17BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -190,37 +221,29 @@
 /* Begin PBXResourcesBuildPhase section */
 		46EE3C11254B142000EC17BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				46EE3C21254B142200EC17BB /* Main.storyboard in Resources */,
 				46EE3C1E254B142200EC17BB /* Preview Assets.xcassets in Resources */,
 				46EE3C1B254B142200EC17BB /* Assets.xcassets in Resources */,
 				45CCCE220F4FF4D7D92D3115 /* .gitignore in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		07D1863C4541D09A46A42294 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Venus-checkManifestLockResult.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = (
+				"",
+			);
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -228,11 +251,9 @@
 /* Begin PBXSourcesBuildPhase section */
 		46EE3C0F254B142000EC17BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				46EE3C17254B142000EC17BB /* PlatoApp.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -248,7 +269,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		46EE3C24254B142200EC17BB /* Debug */ = {
+		46EE3C24254B142200EC17BB /* Debug configuration for PBXProject "Venus" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -313,7 +334,7 @@
 			};
 			name = Debug;
 		};
-		46EE3C25254B142200EC17BB /* Release */ = {
+		46EE3C25254B142200EC17BB /* Release configuration for PBXProject "Venus" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -371,7 +392,7 @@
 			};
 			name = Release;
 		};
-		46EE3C27254B142200EC17BB /* Debug */ = {
+		46EE3C27254B142200EC17BB /* Debug configuration for PBXNativeTarget "Venus" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -415,7 +436,7 @@
 					"-lfmt",
 				);
 				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.huable.kepler;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.huable.plato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
@@ -424,7 +445,7 @@
 			};
 			name = Debug;
 		};
-		46EE3C28254B142200EC17BB /* Release */ = {
+		46EE3C28254B142200EC17BB /* Release configuration for PBXNativeTarget "Venus" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -468,7 +489,7 @@
 					"-lfmt",
 				);
 				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.huable.kepler;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.huable.plato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
@@ -482,19 +503,17 @@
 		46EE3C0E254B142000EC17BB /* Build configuration list for PBXProject "Venus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EE3C24254B142200EC17BB /* Debug */,
-				46EE3C25254B142200EC17BB /* Release */,
+				46EE3C24254B142200EC17BB /* Debug configuration for PBXProject "Venus" */,
+				46EE3C25254B142200EC17BB /* Release configuration for PBXProject "Venus" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		46EE3C26254B142200EC17BB /* Build configuration list for PBXNativeTarget "Venus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EE3C27254B142200EC17BB /* Debug */,
-				46EE3C28254B142200EC17BB /* Release */,
+				46EE3C27254B142200EC17BB /* Debug configuration for PBXNativeTarget "Venus" */,
+				46EE3C28254B142200EC17BB /* Release configuration for PBXNativeTarget "Venus" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */

@@ -1,7 +1,7 @@
 import SwiftData
 import SwiftUI
 
-struct PSMainView: View {
+struct PSMainPage: View {
     @Environment(\.modelContext) private var modelContext
     @EnvironmentObject var router: Router
 
@@ -35,6 +35,6 @@ final class Item {
 }
 
 #Preview {
-    PSMainView()
+    PSMainPage()
         .modelContainer(for: Item.self, inMemory: true)
 }

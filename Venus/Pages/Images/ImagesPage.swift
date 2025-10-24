@@ -2,18 +2,13 @@ import Foundation
 import SwiftUI
 import Combine 
 
-struct PSImageView: View {
+struct PSImagePage: View {
     @EnvironmentObject var router: Router
-    
-    
+
     var body: some View {
         VStack{
             PSNavbarComponent()
-            
-            Button("Images Home") {
-                router.navigate(to: .home)
-            }
-            .padding(.top, 12)
+            ImagesGridComponent()
         }
         .frame(
           minWidth: 0,
@@ -22,13 +17,12 @@ struct PSImageView: View {
           maxHeight: .infinity,
           alignment: .topLeading
         ).padding(0)
-        .background(Color.purple)
     }
  
 }
 
 
 #Preview {
-    PSImageView( )
+    PSImagePage( )
         .modelContainer(for: Item.self, inMemory: true)
 }

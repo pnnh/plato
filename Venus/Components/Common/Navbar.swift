@@ -8,7 +8,6 @@ struct PSNavbarComponent: View {
     
     var body: some View {
         HStack {
-            
             Image(.global)
                     .font(.system(size: 56))
                     .foregroundColor(.accentColor)
@@ -20,17 +19,10 @@ struct PSNavbarComponent: View {
         }
         .padding(8)
         .frame(height: 40, alignment: Alignment.center)
-//        .background(Color(hex: 0xFAFAFA))
+        .background(Color(hex: 0xFAFAFA))
         .background(.green)
             
              
     }
  
 }
-
-
-//
-//#Preview {
-//    PSUUIDView()
-//        .modelContainer(for: Item.self, inMemory: true)
-//}

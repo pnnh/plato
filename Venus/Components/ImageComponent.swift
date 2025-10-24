@@ -3,7 +3,7 @@ import SwiftUI
 import Cocoa
 
 
-struct PSImageView2: NSViewRepresentable {
+struct PSImageComponent: NSViewRepresentable {
     typealias NSViewType = NSImageView
     
     func updateNSView(_ nsView: NSImageView, context: Context) {

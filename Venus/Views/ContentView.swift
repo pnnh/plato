@@ -13,31 +13,20 @@ struct ContentView: View {
         
         VStack {
             HStack {
-                
-                Spacer()
-                Text("Top Text")
-                Spacer()
-                Text("Bottom Text")
-                Spacer()
+                   
                 Button(action: {
                     print("follow")
                     
                     let manager = FileManager.default
                     let urlForDocument = manager.urls(for: .documentDirectory, in:.userDomainMask)
                     let url = urlForDocument[0] as URL
-                    print(url)
+                    print("url: \(url)")
                     
                 }){
                     Text("click")
                 }
             }
             HStack {
-                
-                Spacer()
-                Text("Top Text")
-                Spacer()
-                Text("Bottom Text")
-                Spacer()
                 Button(action: {
                     print("follow2")
                     
@@ -83,14 +72,9 @@ struct ContentView: View {
 //            }
 //            Spacer()
         }
-        
-        //        Text("Helsssaaa我今天没吃饭lo, Worlsssssd22222!")
-        //            .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+#Preview {
+    ContentView()
+}
